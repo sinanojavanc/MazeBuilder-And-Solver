@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <stack>
 #include <algorithm>
@@ -6,11 +6,25 @@
 #include <windows.h>
 using namespace std;
 
-const int aWidth = 10;
-const int aHeight = 10;
+int mWidth = 5;
+int mHeight = 5;
 
 void show_maze() {
-
+	for (int i = 0; i < (mWidth * 2) + 1; i++)
+		cout << "#";
+	cout << endl;
+	for (int j = 0; j < mWidth; j++) 
+	{
+		cout << "#";
+		for (int i = 0; i < mWidth; i++) 
+		{
+			cout << " #";
+		}
+		cout  << endl;
+	}
+	for (int i = 0; i < (mWidth * 2) + 1; i++)
+		cout << "#";
+	cout << endl;
 }
 
 int show_menu() {
@@ -24,6 +38,9 @@ int show_menu() {
 	cin >> choose;
 
 	switch (choose) {
+	case 1:
+
+		break;
 	case 4:
 		return 4;
 		break;
@@ -37,7 +54,6 @@ int main() {
 	while (true) {
 		system("cls");
 		if (show_menu() == 4)
-			break;
+			return 0;
 	}
-	return 0;
 }
