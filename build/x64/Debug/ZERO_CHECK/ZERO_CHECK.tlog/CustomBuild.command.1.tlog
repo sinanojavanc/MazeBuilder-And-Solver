@@ -1,0 +1,10 @@
+^E:\CODEGITHUB\MAZEBUILDER-AND-SOLVER\BUILD\CMAKEFILES\2DA5E2AE1DB245B4E3ECF76AB31A0710\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/CodeGitHub/MazeBuilder-And-Solver -BE:/CodeGitHub/MazeBuilder-And-Solver/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/CodeGitHub/MazeBuilder-And-Solver/build/MazeGame.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

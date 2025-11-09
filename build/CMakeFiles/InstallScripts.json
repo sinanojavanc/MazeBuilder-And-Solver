@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/CodeGitHub/MazeBuilder-And-Solver/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
