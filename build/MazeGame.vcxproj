@@ -361,6 +361,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="E:\CodeGitHub\MazeBuilder-And-Solver\src\main.cpp" />
+    <ClCompile Include="E:\CodeGitHub\MazeBuilder-And-Solver\src\generators\DFSGenerator.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

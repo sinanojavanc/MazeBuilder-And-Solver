@@ -5,6 +5,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 
 set(SOURCE
         ${CMAKE_SOURCE_DIR}/src/main.cpp
+        ${CMAKE_SOURCE_DIR}/src/generators/DFSGenerator.cpp
 )
 
 add_executable(MazeGame ${SOURCE})

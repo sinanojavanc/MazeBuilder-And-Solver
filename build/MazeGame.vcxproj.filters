@@ -4,6 +4,9 @@
     <ClCompile Include="E:\CodeGitHub\MazeBuilder-And-Solver\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\CodeGitHub\MazeBuilder-And-Solver\src\generators\DFSGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="E:\CodeGitHub\MazeBuilder-And-Solver\CMakeLists.txt" />
