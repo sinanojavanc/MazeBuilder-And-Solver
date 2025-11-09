@@ -7,25 +7,25 @@
 #include "DFSGenerator.h"
 using namespace std;
 
-int mWidth = 18;
-int mHeight = 18;
+int mWidth = 17;
+int mHeight = 17;
 random_device rd;
 mt19937 gen(rd());
 
 void show_maze(vector<vector<int>>& maze, const pair<int, int>& playerPos) 
 {
-for (int i = 0; i < mWidth + 2; ++i) cout << " o "; 
+for (int x = 0; x < mWidth + 2; ++x) cout << " o "; 
 cout << endl;
 
-    for (int y = 0; y < mWidth; y++) {
+    for (int y = 0; y < mHeight; y++) {
         cout << " o ";
 
-        for (int x = 0; x < mHeight; x++) {
+        for (int x = 0; x < mWidth; x++) {
             bool isPlayerHere = (playerPos.first == x && playerPos.second == y);
 
             if (isPlayerHere) {
                 cout << " \033[36mo\033[0m ";
-            } else if (maze[x][y] == 1) {
+            } else if (maze[y][x] == 1) {
                 cout << " o ";
             } else {
                 cout << "   ";
@@ -35,7 +35,7 @@ cout << endl;
         cout << " o" << endl; 
     }
 
-for (int i = 0; i < mWidth + 2; ++i) cout << " o "; 
+for (int x = 0; x < mWidth + 2; ++x) cout << " o "; 
 cout << endl;
 }
 
@@ -69,8 +69,19 @@ int main() {
 		system("cls");
 		show_maze(maze,make_pair(-1,-1));
 		int choose = show_menu();
-		if (choose == 1)
+		if (choose == 1){
+			cout << "\nenter the Width of maze:";
+			cin >> mWidth;
+			cout << "\nenter the Height of maze:";
+			cin >> mHeight;
+
+			maze.resize(mWidth);
+    		for (int i = 0; i < mWidth; i++) {
+        		maze[i].resize(mHeight, 1);
+    		}
+
 			deep_first_search(maze);
+		}
 		if (choose == 4)
 			return 0;
 	}

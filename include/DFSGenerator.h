@@ -18,8 +18,8 @@ void show_maze(vector<vector<int>>& maze, const pair<int, int>& ptrtop);
 int show_menu();
 
 //---------------------------    DFS.cpp     ----------------------------
-pair<int, int> path_checker(vector<vector<int>>& m,
-							vector<vector<bool>>& v,
-							pair<int, int> pos);
-
+char path_checker(vector<vector<int>>& m,
+				  vector<vector<bool>>& v,
+				  pair<int, int> pos);
+pair<int, int> ptr_mover(pair<int, int> pos, char direction);
 void deep_first_search(vector<vector<int>>& maze);
