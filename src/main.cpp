@@ -7,23 +7,36 @@
 #include "DFSGenerator.h"
 using namespace std;
 
-int mWidth = 5;
-int mHeight = 5;
+int mWidth = 18;
+int mHeight = 18;
 random_device rd;
 mt19937 gen(rd());
 
-void show_maze(vector<vector<int>>& maze, const pair<int, int>& ptrtop) {
-	for (int i = 0; i < (mWidth * 2) + 1; i++)
-		cout << "-";
-	cout << endl;
-	for (int j = 0; j < mWidth; j++) {
-		cout << "|";
-		for (int i = 0; i < mWidth; i++) {
-			cout << " +";
-		} cout << endl;
-	} for (int i = 0; i < (mWidth * 2) + 1; i++)
-		cout << "-";
-	cout << endl;
+void show_maze(vector<vector<int>>& maze, const pair<int, int>& playerPos) 
+{
+for (int i = 0; i < mWidth + 2; ++i) cout << " o "; 
+cout << endl;
+
+    for (int y = 0; y < mWidth; y++) {
+        cout << " o ";
+
+        for (int x = 0; x < mHeight; x++) {
+            bool isPlayerHere = (playerPos.first == x && playerPos.second == y);
+
+            if (isPlayerHere) {
+                cout << " \033[36mo\033[0m ";
+            } else if (maze[x][y] == 1) {
+                cout << " o ";
+            } else {
+                cout << "   ";
+            }
+        }
+
+        cout << " o" << endl; 
+    }
+
+for (int i = 0; i < mWidth + 2; ++i) cout << " o "; 
+cout << endl;
 }
 
 int show_menu() {
@@ -49,7 +62,8 @@ int show_menu() {
 
 
 int main() {
-	vector<vector<int>> maze(mWidth, vector<int>(mHeight, 0));
+
+	vector<vector<int>> maze(mWidth, vector<int>(mHeight, 1));
 
 	while (true) {
 		system("cls");

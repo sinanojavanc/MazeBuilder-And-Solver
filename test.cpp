@@ -1,9 +1,8 @@
 #include <iostream>
 #include <windows.h>
 using namespace std;
-
-
 	
+
 const int aw = 9, ah = 9;
 	 int array[aw][ah] = {
 		{0,0,1,0,1,0,1,0,0},
