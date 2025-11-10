@@ -40,7 +40,7 @@ cout << endl;
 }
 
 int show_menu() {
-	cout << "\n============ Maze Creator ============\n" << endl
+	cout << "\n============ Maze Creator  ============\n" << endl
 		<< "1. create maze" << endl << "2. solve maze" << endl
 		<< "3. save maze" << endl << "4. Exit" << endl
 		<< "Enter your choose: ";
