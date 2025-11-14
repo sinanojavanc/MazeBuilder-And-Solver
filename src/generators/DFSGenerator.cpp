@@ -24,11 +24,30 @@ pair<int, int> ptr_mover(pair<int, int> pos, char direction)
     }
 }
 
+<<<<<<< HEAD
 char path_checker(vector<vector<int>>& m,
 				  vector<vector<bool>>& v,
 				  pair<int, int> pos) 
 {
 	vector<char> paths;
+=======
+	if (pos.first + 1 < mWidth)
+		if (m[pos.first + 1][pos.second] == 0)
+			if (v[pos.first + 1][pos.second] == 0)
+				paths.push_back({ pos.first + 1, pos.second });
+	if (pos.first - 1 > 0)
+		if (m[pos.first - 1][pos.second] == 0)
+			if (v[pos.first - 1][pos.second] == 0)
+				paths.push_back({ pos.first - 1, pos.second });
+	if (pos.second + 1 < mHeight)
+		if (m[pos.first][pos.second + 1] == 0)
+			if (v[pos.first][pos.second + 1] == 0)
+				paths.push_back({ pos.first, pos.second + 1 });
+	if (pos.second - 1 > 0)
+		if (m[pos.first][pos.second - 1] == 0)
+			if (v[pos.first][pos.second - 1] == 0)
+				paths.push_back({ pos.first , pos.second - 1 });
+>>>>>>> parent of b27e7a7 (refactor maze vector and show_maze)
 
 	if (pos.first + 2 < mWidth)
 		if (m[pos.first + 2][pos.second] == 1)

@@ -7,6 +7,7 @@
 #include "DFSGenerator.h"
 using namespace std;
 
+<<<<<<< HEAD
 int mWidth = 17;
 int mHeight = 17;
 random_device rd;
@@ -37,6 +38,25 @@ cout << endl;
 
 for (int x = 0; x < mWidth + 2; ++x) cout << " o "; 
 cout << endl;
+=======
+int mWidth = 5;
+int mHeight = 5;
+random_device rd;
+mt19937 gen(rd());
+
+void show_maze(vector<vector<int>>& maze, const pair<int, int>& ptrtop) {
+	for (int i = 0; i < (mWidth * 2) + 1; i++)
+		cout << "-";
+	cout << endl;
+	for (int j = 0; j < mWidth; j++) {
+		cout << "|";
+		for (int i = 0; i < mWidth; i++) {
+			cout << " +";
+		} cout << endl;
+	} for (int i = 0; i < (mWidth * 2) + 1; i++)
+		cout << "-";
+	cout << endl;
+>>>>>>> parent of b27e7a7 (refactor maze vector and show_maze)
 }
 
 int show_menu() {
@@ -62,8 +82,7 @@ int show_menu() {
 
 
 int main() {
-
-	vector<vector<int>> maze(mWidth, vector<int>(mHeight, 1));
+	vector<vector<int>> maze(mWidth, vector<int>(mHeight, 0));
 
 	while (true) {
 		system("cls");

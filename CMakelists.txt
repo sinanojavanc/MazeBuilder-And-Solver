@@ -1,14 +1,30 @@
-cmake_minimum_required(VERSION 4.0) 
-project(MazeGame LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.16)
+project(MyProject)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+<<<<<<< HEAD
+set(CMAKE_CXX_STANDARD 20)
 
+# ---- SDL Paths ----
+set(SDL3_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/SDL3/include")
+set(SDL3_LIB_DIR "${CMAKE_SOURCE_DIR}/external/SDL3/lib")
+=======
 include_directories(${CMAKE_SOURCE_DIR}/include)
+>>>>>>> parent of b27e7a7 (refactor maze vector and show_maze)
 
-set(SOURCE
-        ${CMAKE_SOURCE_DIR}/src/main.cpp
-        ${CMAKE_SOURCE_DIR}/src/generators/DFSGenerator.cpp
+include_directories(${SDL3_INCLUDE_DIR})
+link_directories(${SDL3_LIB_DIR})
+
+# ---- Source Files ----
+file(GLOB SOURCES src/*.cpp)
+
+add_executable(MyProject ${SOURCES})
+
+# ---- Link SDL3 ----
+target_link_libraries(MyProject SDL3)
+
+# ---- Copy SDL3.dll next to the executable ----
+add_custom_command(TARGET MyProject POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${CMAKE_SOURCE_DIR}/external/SDL3/SDL3.dll"
+        $<TARGET_FILE_DIR:MyProject>
 )
-
-add_executable(MazeGame ${SOURCE})
