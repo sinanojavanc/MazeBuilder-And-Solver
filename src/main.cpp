@@ -18,11 +18,11 @@ void show_maze(const vector<vector<int>>& maze,
                const vector<pair<int, int>>* solution)
 {
     // مرز بالا
-    for (int x = 0; x < mWidth + 2; ++x) cout << " o ";
+    for (int x = 0; x < mWidth + 2; ++x) cout << " # ";
     cout << '\n';
 
     for (int y = 0; y < mHeight; y++) {
-        cout << " o ";
+        cout << " # ";
 
         for (int x = 0; x < mWidth; x++) {
             bool isPlayer   = (playerPos.first == x && playerPos.second == y);
@@ -33,21 +33,21 @@ void show_maze(const vector<vector<int>>& maze,
             }
 
             if (isPlayer) {
-                cout << " \033[36mo\033[0m ";
+                cout << " \033[36mO\033[0m ";   // آبی = بازیکن
             } else if (isSolution) {
-                cout << " \033[33m.\033[0m ";
+                cout << " \033[32mo\033[0m ";   // سبز = رد پا
             } else if (maze[x][y] == 1) {
-                cout << " o ";
+                cout << " # ";
             } else {
                 cout << "   ";
             }
         }
 
-        cout << " o\n";
+        cout << " #\n";
     }
 
     // مرز پایین
-    for (int x = 0; x < mWidth + 2; ++x) cout << " o ";
+    for (int x = 0; x < mWidth + 2; ++x) cout << " # ";
     cout << '\n';
 }
 
@@ -74,7 +74,6 @@ int main() {
     vector<vector<int>> maze(mWidth, vector<int>(mHeight, 1));
 
     while (true) {
-        // \033[H = cursor home، بدون پرش صفحه
         cout << "\033[H\033[2J";
         show_maze(maze, make_pair(-1, -1));
         int choose = show_menu();
@@ -94,11 +93,9 @@ int main() {
             deep_first_search(maze);
         }
         else if (choose == 2) {
-            // حل ماز از گوشه بالا-چپ تا پایین-راست
             pair<int, int> start = {0, 0};
             pair<int, int> goal  = {mWidth - 1, mHeight - 1};
 
-            // اطمینان از باز بودن خانه شروع/پایان
             maze[start.first][start.second] = 0;
             maze[goal.first][goal.second]   = 0;
 

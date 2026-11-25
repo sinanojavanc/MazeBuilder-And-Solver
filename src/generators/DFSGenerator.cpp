@@ -94,7 +94,7 @@ void deep_first_search(vector<vector<int>>& maze)
             maze[ptrtop.first][ptrtop.second]    = 0;
         }
 
-        Sleep(15);
+        Sleep(50);
     }
 
     // نمایش نهایی

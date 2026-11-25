@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <algorithm>
 #include <windows.h>
 #include "DFSGenerator.h"
 using namespace std;
@@ -55,12 +56,20 @@ vector<pair<int, int>> solve_maze(const vector<vector<int>>& maze,
 void animate_solution(const vector<vector<int>>& maze,
                       const vector<pair<int,int>>& path)
 {
-    for (auto& p : path) {
+    vector<pair<int,int>> trail;   // رد پای سبز = خانه‌های قبلی
+
+    for (size_t i = 0; i < path.size(); ++i) {
         cout << "\033[H\033[2J";
-        show_maze(maze, p, &path);
-        cout << "\nSolving... (" << p.first << ", " << p.second << ")\n";
-        Sleep(40);
+        show_maze(maze, path[i], &trail);   // player=فعلی، trail=گذشته
+        cout << "\nSolving... (" << path[i].first << ", " << path[i].second << ")\n";
+        Sleep(50);
+
+        trail.push_back(path[i]);           // بعد از نمایش، به رد پا اضافه کن
     }
+
+    // فریم آخر: بازیکن روی مقصد، کل مسیر سبز
+    cout << "\033[H\033[2J";
+    show_maze(maze, path.back(), &trail);
     cout << "\nSolved! Press any key...\n";
     system("pause");
 }
