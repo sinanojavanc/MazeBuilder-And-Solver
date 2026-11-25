@@ -1,15 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(MyProject)
 
-<<<<<<< HEAD
-set(CMAKE_CXX_STANDARD 20)
-
-# ---- SDL Paths ----
-set(SDL3_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/SDL3/include")
-set(SDL3_LIB_DIR "${CMAKE_SOURCE_DIR}/external/SDL3/lib")
-=======
 include_directories(${CMAKE_SOURCE_DIR}/include)
->>>>>>> parent of b27e7a7 (refactor maze vector and show_maze)
 
 include_directories(${SDL3_INCLUDE_DIR})
 link_directories(${SDL3_LIB_DIR})
