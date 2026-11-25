@@ -71,11 +71,41 @@ include CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/codegen:
 .PHONY : CMakeFiles/MyProject.dir/codegen
 
+CMakeFiles/MyProject.dir/src/Save.cpp.obj: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Save.cpp.obj: CMakeFiles/MyProject.dir/includes_CXX.rsp
+CMakeFiles/MyProject.dir/src/Save.cpp.obj: E:/CodeGitHub/MazeBuilder-And-Solver/src/Save.cpp
+CMakeFiles/MyProject.dir/src/Save.cpp.obj: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyProject.dir/src/Save.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/Save.cpp.obj -MF CMakeFiles\MyProject.dir\src\Save.cpp.obj.d -o CMakeFiles\MyProject.dir\src\Save.cpp.obj -c E:\CodeGitHub\MazeBuilder-And-Solver\src\Save.cpp
+
+CMakeFiles/MyProject.dir/src/Save.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Save.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CodeGitHub\MazeBuilder-And-Solver\src\Save.cpp > CMakeFiles\MyProject.dir\src\Save.cpp.i
+
+CMakeFiles/MyProject.dir/src/Save.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Save.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CodeGitHub\MazeBuilder-And-Solver\src\Save.cpp -o CMakeFiles\MyProject.dir\src\Save.cpp.s
+
+CMakeFiles/MyProject.dir/src/Solver.cpp.obj: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/Solver.cpp.obj: CMakeFiles/MyProject.dir/includes_CXX.rsp
+CMakeFiles/MyProject.dir/src/Solver.cpp.obj: E:/CodeGitHub/MazeBuilder-And-Solver/src/Solver.cpp
+CMakeFiles/MyProject.dir/src/Solver.cpp.obj: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/src/Solver.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/Solver.cpp.obj -MF CMakeFiles\MyProject.dir\src\Solver.cpp.obj.d -o CMakeFiles\MyProject.dir\src\Solver.cpp.obj -c E:\CodeGitHub\MazeBuilder-And-Solver\src\Solver.cpp
+
+CMakeFiles/MyProject.dir/src/Solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/Solver.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CodeGitHub\MazeBuilder-And-Solver\src\Solver.cpp > CMakeFiles\MyProject.dir\src\Solver.cpp.i
+
+CMakeFiles/MyProject.dir/src/Solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/Solver.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CodeGitHub\MazeBuilder-And-Solver\src\Solver.cpp -o CMakeFiles\MyProject.dir\src\Solver.cpp.s
+
 CMakeFiles/MyProject.dir/src/main.cpp.obj: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/main.cpp.obj: CMakeFiles/MyProject.dir/includes_CXX.rsp
 CMakeFiles/MyProject.dir/src/main.cpp.obj: E:/CodeGitHub/MazeBuilder-And-Solver/src/main.cpp
 CMakeFiles/MyProject.dir/src/main.cpp.obj: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyProject.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/src/main.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/main.cpp.obj -MF CMakeFiles\MyProject.dir\src\main.cpp.obj.d -o CMakeFiles\MyProject.dir\src\main.cpp.obj -c E:\CodeGitHub\MazeBuilder-And-Solver\src\main.cpp
 
 CMakeFiles/MyProject.dir/src/main.cpp.i: cmake_force
@@ -88,17 +118,21 @@ CMakeFiles/MyProject.dir/src/main.cpp.s: cmake_force
 
 # Object files for target MyProject
 MyProject_OBJECTS = \
+"CMakeFiles/MyProject.dir/src/Save.cpp.obj" \
+"CMakeFiles/MyProject.dir/src/Solver.cpp.obj" \
 "CMakeFiles/MyProject.dir/src/main.cpp.obj"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
+MyProject.exe: CMakeFiles/MyProject.dir/src/Save.cpp.obj
+MyProject.exe: CMakeFiles/MyProject.dir/src/Solver.cpp.obj
 MyProject.exe: CMakeFiles/MyProject.dir/src/main.cpp.obj
 MyProject.exe: CMakeFiles/MyProject.dir/build.make
 MyProject.exe: CMakeFiles/MyProject.dir/linkLibs.rsp
 MyProject.exe: CMakeFiles/MyProject.dir/objects1.rsp
 MyProject.exe: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MyProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyProject.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/CodeGitHub/MazeBuilder-And-Solver/external/SDL3/SDL3.dll E:/CodeGitHub/MazeBuilder-And-Solver/build-mingw
 

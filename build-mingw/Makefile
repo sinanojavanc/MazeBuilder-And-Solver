@@ -116,24 +116,96 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyProject
+# Target rules for targets named MazeGame
 
 # Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyProject
-.PHONY : MyProject
+MazeGame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MazeGame
+.PHONY : MazeGame
 
 # fast build rule for target.
-MyProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
+MazeGame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/build
+.PHONY : MazeGame/fast
+
+src/Save.obj: src/Save.cpp.obj
+.PHONY : src/Save.obj
+
+# target to build an object file
+src/Save.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/Save.cpp.obj
+.PHONY : src/Save.cpp.obj
+
+src/Save.i: src/Save.cpp.i
+.PHONY : src/Save.i
+
+# target to preprocess a source file
+src/Save.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/Save.cpp.i
+.PHONY : src/Save.cpp.i
+
+src/Save.s: src/Save.cpp.s
+.PHONY : src/Save.s
+
+# target to generate assembly for a file
+src/Save.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/Save.cpp.s
+.PHONY : src/Save.cpp.s
+
+src/Solver.obj: src/Solver.cpp.obj
+.PHONY : src/Solver.obj
+
+# target to build an object file
+src/Solver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/Solver.cpp.obj
+.PHONY : src/Solver.cpp.obj
+
+src/Solver.i: src/Solver.cpp.i
+.PHONY : src/Solver.i
+
+# target to preprocess a source file
+src/Solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/Solver.cpp.i
+.PHONY : src/Solver.cpp.i
+
+src/Solver.s: src/Solver.cpp.s
+.PHONY : src/Solver.s
+
+# target to generate assembly for a file
+src/Solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/Solver.cpp.s
+.PHONY : src/Solver.cpp.s
+
+src/generators/DFSGenerator.obj: src/generators/DFSGenerator.cpp.obj
+.PHONY : src/generators/DFSGenerator.obj
+
+# target to build an object file
+src/generators/DFSGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj
+.PHONY : src/generators/DFSGenerator.cpp.obj
+
+src/generators/DFSGenerator.i: src/generators/DFSGenerator.cpp.i
+.PHONY : src/generators/DFSGenerator.i
+
+# target to preprocess a source file
+src/generators/DFSGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.i
+.PHONY : src/generators/DFSGenerator.cpp.i
+
+src/generators/DFSGenerator.s: src/generators/DFSGenerator.cpp.s
+.PHONY : src/generators/DFSGenerator.s
+
+# target to generate assembly for a file
+src/generators/DFSGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.s
+.PHONY : src/generators/DFSGenerator.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -141,7 +213,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -149,7 +221,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MazeGame.dir\build.make CMakeFiles/MazeGame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -160,7 +232,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MyProject
+	@echo ... MazeGame
+	@echo ... src/Save.obj
+	@echo ... src/Save.i
+	@echo ... src/Save.s
+	@echo ... src/Solver.obj
+	@echo ... src/Solver.i
+	@echo ... src/Solver.s
+	@echo ... src/generators/DFSGenerator.obj
+	@echo ... src/generators/DFSGenerator.i
+	@echo ... src/generators/DFSGenerator.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -1,22 +1,20 @@
-cmake_minimum_required(VERSION 3.16)
-project(MyProject)
+cmake_minimum_required(VERSION 3.20)
+project(MazeGame CXX)
 
-include_directories(${CMAKE_SOURCE_DIR}/include)
+# تنظیم استاندارد C++
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(${SDL3_INCLUDE_DIR})
-link_directories(${SDL3_LIB_DIR})
+# مسیر پوشه هدرها
+include_directories(include)
 
-# ---- Source Files ----
-file(GLOB SOURCES src/*.cpp)
-
-add_executable(MyProject ${SOURCES})
-
-# ---- Link SDL3 ----
-target_link_libraries(MyProject SDL3)
-
-# ---- Copy SDL3.dll next to the executable ----
-add_custom_command(TARGET MyProject POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_SOURCE_DIR}/external/SDL3/SDL3.dll"
-        $<TARGET_FILE_DIR:MyProject>
+# لیست فایل‌های سورس اصلی
+set(SOURCES
+    src/main.cpp
+    src/Solver.cpp
+    src/Save.cpp
+    src/generators/DFSGenerator.cpp
 )
+
+# ساخت فایل اجرایی
+add_executable(MazeGame ${SOURCES})

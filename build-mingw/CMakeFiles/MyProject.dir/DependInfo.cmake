@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/CodeGitHub/MazeBuilder-And-Solver/src/Save.cpp" "CMakeFiles/MyProject.dir/src/Save.cpp.obj" "gcc" "CMakeFiles/MyProject.dir/src/Save.cpp.obj.d"
+  "E:/CodeGitHub/MazeBuilder-And-Solver/src/Solver.cpp" "CMakeFiles/MyProject.dir/src/Solver.cpp.obj" "gcc" "CMakeFiles/MyProject.dir/src/Solver.cpp.obj.d"
   "E:/CodeGitHub/MazeBuilder-And-Solver/src/main.cpp" "CMakeFiles/MyProject.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MyProject.dir/src/main.cpp.obj.d"
   )
 

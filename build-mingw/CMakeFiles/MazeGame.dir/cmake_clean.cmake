@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MazeGame.dir/src/Save.cpp.obj"
+  "CMakeFiles/MazeGame.dir/src/Save.cpp.obj.d"
+  "CMakeFiles/MazeGame.dir/src/Solver.cpp.obj"
+  "CMakeFiles/MazeGame.dir/src/Solver.cpp.obj.d"
   "CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj"
   "CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj.d"
   "CMakeFiles/MazeGame.dir/src/main.cpp.obj"

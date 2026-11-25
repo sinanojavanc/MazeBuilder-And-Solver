@@ -86,11 +86,41 @@ CMakeFiles/MazeGame.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MazeGame.dir/src/main.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CodeGitHub\MazeBuilder-And-Solver\src\main.cpp -o CMakeFiles\MazeGame.dir\src\main.cpp.s
 
+CMakeFiles/MazeGame.dir/src/Solver.cpp.obj: CMakeFiles/MazeGame.dir/flags.make
+CMakeFiles/MazeGame.dir/src/Solver.cpp.obj: CMakeFiles/MazeGame.dir/includes_CXX.rsp
+CMakeFiles/MazeGame.dir/src/Solver.cpp.obj: E:/CodeGitHub/MazeBuilder-And-Solver/src/Solver.cpp
+CMakeFiles/MazeGame.dir/src/Solver.cpp.obj: CMakeFiles/MazeGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MazeGame.dir/src/Solver.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MazeGame.dir/src/Solver.cpp.obj -MF CMakeFiles\MazeGame.dir\src\Solver.cpp.obj.d -o CMakeFiles\MazeGame.dir\src\Solver.cpp.obj -c E:\CodeGitHub\MazeBuilder-And-Solver\src\Solver.cpp
+
+CMakeFiles/MazeGame.dir/src/Solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MazeGame.dir/src/Solver.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CodeGitHub\MazeBuilder-And-Solver\src\Solver.cpp > CMakeFiles\MazeGame.dir\src\Solver.cpp.i
+
+CMakeFiles/MazeGame.dir/src/Solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MazeGame.dir/src/Solver.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CodeGitHub\MazeBuilder-And-Solver\src\Solver.cpp -o CMakeFiles\MazeGame.dir\src\Solver.cpp.s
+
+CMakeFiles/MazeGame.dir/src/Save.cpp.obj: CMakeFiles/MazeGame.dir/flags.make
+CMakeFiles/MazeGame.dir/src/Save.cpp.obj: CMakeFiles/MazeGame.dir/includes_CXX.rsp
+CMakeFiles/MazeGame.dir/src/Save.cpp.obj: E:/CodeGitHub/MazeBuilder-And-Solver/src/Save.cpp
+CMakeFiles/MazeGame.dir/src/Save.cpp.obj: CMakeFiles/MazeGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MazeGame.dir/src/Save.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MazeGame.dir/src/Save.cpp.obj -MF CMakeFiles\MazeGame.dir\src\Save.cpp.obj.d -o CMakeFiles\MazeGame.dir\src\Save.cpp.obj -c E:\CodeGitHub\MazeBuilder-And-Solver\src\Save.cpp
+
+CMakeFiles/MazeGame.dir/src/Save.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MazeGame.dir/src/Save.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CodeGitHub\MazeBuilder-And-Solver\src\Save.cpp > CMakeFiles\MazeGame.dir\src\Save.cpp.i
+
+CMakeFiles/MazeGame.dir/src/Save.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MazeGame.dir/src/Save.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CodeGitHub\MazeBuilder-And-Solver\src\Save.cpp -o CMakeFiles\MazeGame.dir\src\Save.cpp.s
+
 CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj: CMakeFiles/MazeGame.dir/flags.make
 CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj: CMakeFiles/MazeGame.dir/includes_CXX.rsp
 CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj: E:/CodeGitHub/MazeBuilder-And-Solver/src/generators/DFSGenerator.cpp
 CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj: CMakeFiles/MazeGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj -MF CMakeFiles\MazeGame.dir\src\generators\DFSGenerator.cpp.obj.d -o CMakeFiles\MazeGame.dir\src\generators\DFSGenerator.cpp.obj -c E:\CodeGitHub\MazeBuilder-And-Solver\src\generators\DFSGenerator.cpp
 
 CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.i: cmake_force
@@ -104,18 +134,22 @@ CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.s: cmake_force
 # Object files for target MazeGame
 MazeGame_OBJECTS = \
 "CMakeFiles/MazeGame.dir/src/main.cpp.obj" \
+"CMakeFiles/MazeGame.dir/src/Solver.cpp.obj" \
+"CMakeFiles/MazeGame.dir/src/Save.cpp.obj" \
 "CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj"
 
 # External object files for target MazeGame
 MazeGame_EXTERNAL_OBJECTS =
 
 MazeGame.exe: CMakeFiles/MazeGame.dir/src/main.cpp.obj
+MazeGame.exe: CMakeFiles/MazeGame.dir/src/Solver.cpp.obj
+MazeGame.exe: CMakeFiles/MazeGame.dir/src/Save.cpp.obj
 MazeGame.exe: CMakeFiles/MazeGame.dir/src/generators/DFSGenerator.cpp.obj
 MazeGame.exe: CMakeFiles/MazeGame.dir/build.make
 MazeGame.exe: CMakeFiles/MazeGame.dir/linkLibs.rsp
 MazeGame.exe: CMakeFiles/MazeGame.dir/objects1.rsp
 MazeGame.exe: CMakeFiles/MazeGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MazeGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\CodeGitHub\MazeBuilder-And-Solver\build-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MazeGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MazeGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
